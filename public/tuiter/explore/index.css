@@ -1,137 +1,38 @@
-.wd-search-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 16px;
-    align-items: center;
+.wd-top-30-pc {
+    top: 30%;
 }
 
-.wd-search-bar {
-    display: flex;
-    align-items: center;
+.wd-sidebar-avatar {
+    height: 48px;
+    width: 48px;
+}
+
+.wd-content-img {
+    height: 88px;
+    width: 88px;
+    border-radius: 10px;
+}
+
+.wd-font-color-gray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-font-color-white {
     color: white;
-    background-color: rgb(33,35,39);
-    border-radius: 16px;
-    width: 80%;
-    margin-left: 5px;
-    padding: 8px 8px 8px 20px;
 }
 
-.wd-search-input {
-    border: none;
-    outline: none;
-    color: white;
-    background-color: rgb(33,35,39);
-    margin-left: 15px;
-    width: 100%;
-}
-
-.fa-magnifying-glass {
-    color: gray;
+.wd-font-size-30-px {
+    font-size: 30px;
 }
 
 .fa-gear {
-    color: rgb(29, 161, 242);
-    margin-right: 12px;
+    color: #0d6efd
 }
 
-.wd-links-container {
-    display: flex;
-    align-items: center;
-}
-
-.wd-links {
-    color: rgb(110, 118, 125);
-    font-size: 15px;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.wd-links-highlighted {
-    color: rgb(29, 161, 242);
-    font-size: 15px;
-    text-decoration: none;
-    padding-bottom: 16px;
-    border-bottom: 3px solid;
-}
-
-.wd-post-container {
-    border-top: 1px solid rgb(47, 51, 54);
-    padding-bottom: 10px;
-}
-
-.wd-post {
-    display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    margin-top: 10px;
-    margin-right: 16px;
-}
-
-.wd-post-topic {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-
-.wd-post-title {
-    color: white;
-    font-weight: bold;
+.wd-font-size-15-px {
     font-size: 15px;
 }
 
-.wd-post-tuits-number {
-    color: rgb(110, 118, 125);
-    font-size: 13px;
-}
-
-.wd-dot {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.wd-img-post {
-    margin-left: 16px;
-    margin-top: 10px;
-}
-
-.wd-img-post-article {
-    display: flex;
-    flex-direction: column;
-}
-
-.wd-img-post-heading {
-    display: flex;
-    font-size: 13px;
-    color: rgb(110, 118, 125);
-}
-
-.wd-img-post-author {
-    color: white;
-    font-weight: bold;
-}
-
-.wd-img-post-time {
-    color: rgb(110, 118, 125);
-}
-
-.wd-post-img {
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-    margin-right: 16px;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-}
-
-.wd-float-done {
-    clear: both;
-}
 
 
 

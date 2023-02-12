@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 pt-2" id="navigation">
+                <div class="list-group" >
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-t fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1 position-relative">
+                                <i class="fa-regular fa-building wd-navigation-icon-size"></i>
+                                <span class="position-absolute wd-dot"></span>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Home
+                            </div>
+                        </div>
+                    </a>
+                    <a href="index.html" class="list-group-item active wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-hashtag wd-navigation-icon-size wd-icon-bold"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Explore
+                            </div>
+                        </div>
+
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-bell wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Notifications
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-envelope wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Messages
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-bookmark wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Bookmarks
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-face-grin-hearts wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Top Articles
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-regular fa-user wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                Profile
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item wd-navigation-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fa-solid fa-ellipsis wd-navigation-icon-size"></i>
+                            </div>
+                            <div class="col-10 d-none d-xl-block ps-4">
+                                More
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn btn-primary rounded-pill mt-2" id="tuit-btn">Tuit</a>
+
+                </div>
+            </div>
+
+            <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6" id="main-content">
+                <div class="list-group">
+                    <div class="list-group-item wd-no-top-border wd-no-bottom-border">
+                        <div class="row align-items-center">
+                            <div class="col-11 position-relative">
+                                <input class="form-control rounded-pill ps-5 wd-bg-color-offwhite" placeholder="Search Tuit"/>
+                                <i class="fa-solid fa-magnifying-glass position-absolute wd-top-33-pc ms-3"></i>
+                            </div>
+                            <div class="col-1">
+                                <a href="#"><i class="fa-solid fa-gear float-end" id="gear"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-group-item wd-no-top-border wd-no-bottom-border" style="padding-left: 0px; padding-right: 0px">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><span class="wd-links-highlighted">For you</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item d-none d-md-block">
+                                <a class="nav-link" href="#">Entertainment</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                        <div class="row position-relative">
+                            <img src="../images/australianopen.jpg"/>
+                            <div class="position-absolute start-0 bottom-0 ms-3 mb-2 wd-font-color-white">
+                                <div class="wd-font-size-15-px">Tennis Tournament &#183 LIVE</div>
+                                <div class="fw-bold wd-font-size-25-px">Australian Open 2023</div>
+                            </div>
+                        </div>
+
+                    <div class="list-group-item p-0 pt-1"></div>
+                    <div class="list-group-item wd-font-size-15-px wd-no-bottom-border">
+                        <div class="row pt-2">
+                            <div class="col-11">
+                                <div class="wd-font-color-gray">
+                                    Politics &#183 Trending
+                                </div>
+                                <div class="fw-bold wd-font-size-18-px">
+                                    Seizures
+                                </div>
+                                <div class="wd-font-color-gray">
+                                    4,953 Tuits
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa-solid fa-ellipsis wd-navigation-icon-size float-end"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-font-size-15-px wd-no-top-border wd-no-bottom-border">
+                        <div class="row pt-2">
+                            <div class="col-11">
+                                <div class="fw-bold wd-font-size-18-px">
+                                    #InfinityPool
+                                </div>
+                                <div class="wd-font-color-gray wd-font-size-18-px">
+                                    See the electrifying thriller Infinity Pool in theaters - if you dare
+                                </div>
+                                <div class="wd-font-color-gray">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i> Promoted by NEON
+                                </div>
+                            </div>
+                            <div class="col-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-font-size-15-px wd-no-top-border wd-no-bottom-border">
+                        <div class="row pt-2">
+                            <div class="col-11">
+                                <div class="wd-font-color-gray">
+                                    Sports &#183 Trending
+                                </div>
+                                <div class="fw-bold wd-font-size-18-px">
+                                    RIP Bean
+                                </div>
+                                <div class="wd-font-color-gray">
+                                    18K Tuits
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa-solid fa-ellipsis wd-navigation-icon-size float-end"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-font-size-15-px wd-no-top-border wd-no-bottom-border">
+                        <div class="row pt-2">
+                            <div class="col-11">
+                                <div class="wd-font-color-gray">
+                                    Politics &#183 Trending
+                                </div>
+                                <div class="fw-bold wd-font-size-18-px">
+                                    Durham
+                                </div>
+                                <div class="wd-font-color-gray">
+                                    Trending with <span class="wd-font-color-blue">Barr</span>, <span class="wd-font-color-blue">Barr</span>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa-solid fa-ellipsis wd-navigation-icon-size float-end"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-font-size-15-px wd-no-top-border">
+                        <div class="row pt-2">
+                            <div class="col-11">
+                                <div class="wd-font-color-gray">
+                                    Trending in Business and finance
+                                </div>
+                                <div class="fw-bold wd-font-size-18-px">
+                                    #DirectedEvolution
+                                </div>
+                                <div class="wd-font-color-gray">
+                                    172K Tuits
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <i class="fa-solid fa-ellipsis wd-navigation-icon-size float-end"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-4 d-none d-lg-block pt-2" id="sidebar">
+                <div class="list-group wd-bg-color-offwhite wd-rounded-corner">
+                    <div class="list-group-item fw-bold wd-bg-color-offwhite wd-font-size-25-px wd-navigation-item">Who to follow</div>
+                    <div class="list-group-item wd-bg-color-offwhite wd-navigation-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <img class="rounded-circle float-start wd-sidebar-avatar"
+                                     src="../images/northeastern.jpg"/>
+                            </div>
+                            <div class="col-8">
+                                <div class="fw-bold">Northeastern U. <i class="fa-solid fa-circle-check wd-font-color-blue"></i>
+                                </div>
+                                <div class="wd-font-color-gray">@Northeastern</div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-dark rounded-pill float-end pt-1 pb-1 wd-font-size-15-px">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-bg-color-offwhite wd-navigation-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <img class="rounded-circle float-start wd-sidebar-avatar"
+                                     src="../images/mattwallace.jpg"/>
+                            </div>
+                            <div class="col-8">
+                                <div class="fw-bold">Matt Wallace <i class="fa-solid fa-circle-check wd-font-color-blue"></i>
+                                </div>
+                                <div class="wd-font-color-gray">@MattWallace888</div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-dark rounded-pill float-end pt-1 pb-1 wd-font-size-15-px">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-bg-color-offwhite wd-navigation-item">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <img class="rounded-circle float-start wd-sidebar-avatar"
+                                     src="../images/pointsbet.jpg"/>
+                            </div>
+                            <div class="col-8">
+                                <div class="fw-bold">PointsBet Sports <i class="fa-solid fa-circle-check wd-color-yellow"></i>
+                                </div>
+                                <div class="wd-font-color-gray">@PointsBetUSA</div>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-dark rounded-pill float-end pt-1 pb-1 wd-font-size-15-px">Follow</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                            </div>
+                            <div class="col-8 wd-font-color-gray wd-font-size-15-px">
+                                <i class="fa-solid fa-square-arrow-up-right"></i> Promoted
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-group-item wd-bg-color-offwhite wd-navigation-item">
+                        <a href="#" class="wd-font-color-blue" style="text-decoration: none">Show more</a>
+                    </div>
+                </div>
+
+                <div class="row pt-3 ps-3 pe-5">
+                    <div class="col-12">
+                        <span class="wd-declaration-text wd-keep-together">Terms of Service</span>
+                        <span class="wd-declaration-text wd-keep-together">Privacy Policy</span>
+                        <span class="wd-declaration-text wd-keep-together">Cookie Policy</span>
+                        <span class="wd-declaration-text wd-keep-together">Accessibility</span>
+                        <span class="wd-declaration-text wd-keep-together">Ads info</span>
+                        <span class="wd-declaration-text wd-keep-together">More...</span>
+                        <span class="wd-declaration-text wd-keep-together"><i class="fa-regular fa-copyright"></i> 2023 Tuiter, Inc.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+</html>

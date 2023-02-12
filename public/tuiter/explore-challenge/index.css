@@ -1,0 +1,180 @@
+.wd-top-33-pc {
+    top: 33%
+}
+
+.wd-sidebar-avatar {
+    height: 48px;
+    width: 48px;
+}
+
+.wd-content-img {
+    height: 88px;
+    width: 88px;
+    border-radius: 10px;
+}
+
+.wd-font-color-gray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-font-color-white {
+    color: white;
+}
+
+.wd-font-size-30-px {
+    font-size: 30px;
+}
+
+.fa-t {
+    color: rgb(29, 155, 240);
+}
+
+.wd-navigation-item {
+    border: none !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.wd-no-border {
+    border: none !important;
+}
+
+.list-group-item.active{
+    background-color: transparent !important;
+    color: black !important;
+    font-weight: bold !important;
+    margin-top: 5px !important;
+}
+
+.wd-navigation-icon-size {
+    font-size: 20px;
+}
+
+#tuit-btn {
+    background-color: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#gear {
+    color: rgb(15, 20, 25);
+    font-size: 20px;
+}
+
+.wd-icon-bold {
+    font-weight: bold !important;
+}
+
+.wd-dot {
+    top: -5px;
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(29, 155, 240);
+}
+
+.form-control {
+    border: none !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.fa-magnifying-glass {
+    color: rgb(83 100 113);
+}
+
+.wd-bg-color-offwhite {
+    background-color: rgb(239 243 244) !important;
+}
+
+.wd-rounded-corner {
+    border-radius: 20px !important;
+}
+
+.wd-font-size-25-px {
+    font-size: 25px;
+}
+
+.wd-color-yellow {
+    color: rgb(229 189 38);
+}
+
+.wd-font-size-15-px {
+    font-size: 15px !important;
+}
+
+.wd-font-color-blue {
+    color: rgb(29, 155, 240) !important;
+}
+
+.wd-font-color-gray {
+    color: rgb(83 100 113);
+}
+
+.wd-font-size-15-px {
+    font-size: 15px;
+}
+
+.wd-declaration-text {
+    font-size: 15px;
+    color: rgb(83 100 113);
+    padding: 5px;
+}
+
+.wd-keep-together {
+    white-space: nowrap;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    border: none !important;
+    font-size: 16px;
+}
+
+.nav-tabs > li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    color: rgb(83 100 113) !important;
+}
+
+.wd-links-highlighted {
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 12px;
+    border-bottom: 4px solid;
+    border-color: rgb(29, 155, 240);
+}
+
+.active {
+    border: none !important;
+}
+
+.wd-font-size-18-px {
+    font-size: 18px;
+}
+
+.wd-no-top-border {
+    border-top: none !important;
+}
+
+.wd-no-bottom-border {
+    border-bottom: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
