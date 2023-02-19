@@ -1,0 +1,59 @@
+.wd-bookmark-post-avatar {
+    margin-left: 16px;
+    margin-top: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.wd-bookmark-post-icon-item {
+    display: flex;
+    width: 25%;
+}
+
+.wd-bookmark-post-icon-pair {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.wd-bookmark-post-icon-number {
+    padding-left: 12px;
+    font-size: 13px;
+}
+
+.wd-color-lightgray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-color-red {
+    color: darkred;
+}
+
+.wd-m-left-auto {
+    margin-left: auto;
+}
+
+.wd-card-img-border {
+    border: 1px solid rgb(47, 51, 54) !important;
+}
+
+.wd-card-text-border {
+    border-left: 1px solid rgb(47, 51, 54) !important;
+    border-right: 1px solid rgb(47, 51, 54) !important;
+    border-bottom: 1px solid rgb(47, 51, 54) !important;
+}
+
+.wd-font-color-blue {
+    color: #3ca1cb;
+}
+
+.wd-card-top-round-corner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.wd-card-bottom-round-corner {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

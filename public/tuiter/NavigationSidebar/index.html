@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavigationSidebarTest</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row mt-2">
+        <div id="NavigationSidebar" class="col-2 col-md-2 col-lg-1 col-xl-2">
+
+        </div>
+    </div>
+
+    <script type="module">
+        import NavigationSidebar from "./index.js";
+        $('#NavigationSidebar').append(`${NavigationSidebar()}`);
+    </script>
+
+</body>
+</html>

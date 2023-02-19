@@ -1,10 +1,30 @@
-body {
-    background-color: black;
+.wd-top-30-pc {
+    top: 30%;
 }
 
-.wd-container {
-    margin: 5px;
-    border: 1px solid rgb(47, 51, 54);
-    font-family: "Helvetica Neue";
-    line-height: 1.5;
+.wd-sidebar-avatar {
+    height: 48px;
+    width: 48px;
+}
+
+.wd-content-img {
+    height: 88px;
+    width: 88px;
+    border-radius: 10px;
+}
+
+.wd-font-color-gray {
+    color: rgb(110, 118, 125);
+}
+
+.wd-font-color-white {
+    color: white;
+}
+
+.wd-font-size-30-px {
+    font-size: 30px;
+}
+
+.wd-font-size-15-px {
+    font-size: 15px;
 }

@@ -81,9 +81,9 @@
     color: white;
     font-size: 15px;
     position: relative;
-    right: 16px;
+    /*right: 16px;*/
     max-width: 506px;
-    float: right;
+    /*float: right;*/
 }
 
 .wd-bookmark-post-img-container {
@@ -94,10 +94,7 @@
 
 
 .wd-bookmark-post-img {
-    width: 504px;
-    height: 264px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+
 }
 
 .wd-bookmark-post-img-title {
@@ -105,6 +102,7 @@
     font-size: 15px;
     font-weight: bold;
     padding: 12px 12px 0px 12px;
+    border-top: 1px solid rgb(47, 51, 54);
 }
 
 .wd-bookmark-post-img-text {
@@ -148,7 +146,6 @@
     margin-left: auto;
 }
 
-
-
-
-
+.wd-card-corner {
+    border-radius: 20px !important;
+}

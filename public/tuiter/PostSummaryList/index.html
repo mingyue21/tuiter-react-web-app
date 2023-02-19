@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PostSummaryTest</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="../../vendors/bootswatch/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
+    <link href="../ExploreScreen/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="explorecomponent" class="col-10 col-lg-7 col-xl-6">
+    </div>
+
+<!--    <script type="module">-->
+<!--        import PostSummaryItem from "./PostSummaryItem.js";-->
+
+<!--        const post = {-->
+<!--                "topic": "Web Development",-->
+<!--                "userName": "ReactJS",-->
+<!--                "time": "2h",-->
+<!--                "image": "../../images/react.jpg",-->
+<!--                "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",-->
+<!--            };-->
+
+<!--            $('#explorecomponent').append(`${PostSummaryItem(post)}`)-->
+<!--    </script>-->
+
+    <script type="module">
+        import PostSummaryList from "./index.js";
+
+        $('#explorecomponent').append(`${PostSummaryList()}`)
+    </script>
+
+</body>
+</html>
