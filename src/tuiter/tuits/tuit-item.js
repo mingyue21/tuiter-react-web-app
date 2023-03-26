@@ -1,7 +1,16 @@
 import React from "react";
-import "./index.css";
+import "../home/index.css";
+import { useDispatch } from "react-redux";
+import { deleteTuit,likedToggle } from "./tuits-reducer";
 
-const PostItem = ({post}) => {
+const TuitItem = ({post}) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+    const likedToggleHandler = (id) => {
+        dispatch(likedToggle(id));
+    }
 
     return (
         <div className="list-group-item bg-transparent">
@@ -16,7 +25,8 @@ const PostItem = ({post}) => {
                             <span className="fw-bold">{post.userName} </span>
                             <i className="bi bi-check-circle-fill wd-font-color-blue"></i>
                             <span className="wd-color-lightgray"> {post.handle} &#183; {post.time}</span>
-                            <i className="bi bi-three-dots float-end wd-color-lightgray"></i><br/>
+                            <i className="bi bi-x-lg float-end"
+                                onClick={() => deleteTuitHandler(post._id)}></i>
                         </div>
                     </div>
 
@@ -41,7 +51,7 @@ const PostItem = ({post}) => {
                         </div>
 
                         <div className="wd-bookmark-post-icon-item">
-                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray">
+                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray" onClick={() => likedToggleHandler(post._id)}>
                                 {post.liked ? <i className="bi bi-heart-fill wd-color-red"></i> : <i className="bi bi-heart"></i>}
                                 <div className="wd-bookmark-post-icon-number">{post.likes}</div>
                             </a>
@@ -59,4 +69,4 @@ const PostItem = ({post}) => {
     );
 }
 
-export default PostItem;
+export default TuitItem;
