@@ -10,13 +10,20 @@ const EditProfileComponent = () => {
     const savedProfile = useSelector(state => state.profile);
     const [profile, setProfile] = useState(savedProfile);
 
-    const handleNameChange = (event) => {
-        const name = event.target.value;
-        const [firstName, lastName=""] = name.split(" ");
+    const handleFirstNameChange = (event) => {
+        const firstName = event.target.value;
         setProfile({
             ...profile, 
-            firstName,
-            lastName});     
+            firstName
+            });     
+    }
+
+    const handleLastNameChange = (event) => {
+        const lastName = event.target.value;
+        setProfile({
+            ...profile, 
+            lastName
+            });     
     }
 
     const handleBioChange = (event) => {
@@ -78,19 +85,25 @@ const EditProfileComponent = () => {
                 </div>
             </div>     
             <div className="row">
-                <img src={`/images/${profile.bannerPicture}`} className="wd-profile-banner"/>
+                <img alt="img" src={`/images/${profile.bannerPicture}`} className="wd-profile-banner"/>
             </div>
             <div className="row position-relative">
                 <div className="col-4">
-                    <img src={`/images/${profile.profilePicture}`} className="rounded-circle wd-profile-avator"/>
+                    <img alt="img" src={`/images/${profile.profilePicture}`} className="rounded-circle wd-profile-avator"/>
                 </div>
             </div>
             <form className="pt-4 pb-4">
                 <div className="form-group mt-5 position-relative">
-                    <label for="name" className="wd-font-color-gray wd-label-position">Name</label>
-                    <input type="text" className="form-control pt-4" id="name" name="name"
-                        value={profile.firstName + `${profile.lastName ? " " + profile.lastName : ""}`}
-                        onChange={handleNameChange}/>
+                    <label for="firstName" className="wd-font-color-gray wd-label-position">First name</label>
+                    <input type="text" className="form-control pt-4" id="firstName" name="firstName"
+                        value={profile.firstName}
+                        onChange={handleFirstNameChange}/>
+                </div>
+                <div className="form-group mt-5 position-relative">
+                    <label for="lastName" className="wd-font-color-gray wd-label-position">Last name</label>
+                    <input type="text" className="form-control pt-4" id="lastName" name="lastName"
+                        value={profile.lastName}
+                        onChange={handleLastNameChange}/>
                 </div>
                 <div className="form-group mt-3 position-relative">
                     <label for="bio" className="wd-font-color-gray wd-label-position">Bio</label>
