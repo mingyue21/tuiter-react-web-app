@@ -99,7 +99,7 @@ const EditProfileComponent = () => {
                         value={profile.firstName}
                         onChange={handleFirstNameChange}/>
                 </div>
-                <div className="form-group mt-5 position-relative">
+                <div className="form-group mt-3 position-relative">
                     <label for="lastName" className="wd-font-color-gray wd-label-position">Last name</label>
                     <input type="text" className="form-control pt-4" id="lastName" name="lastName"
                         value={profile.lastName}
