@@ -1,15 +1,13 @@
 import React from "react";
 import "../home/index.css";
 import { useDispatch } from "react-redux";
-import { deleteTuit,likedToggle } from "./tuits-reducer";
+import { deleteTuit } from "./tuits-reducer";
+import TuitStats from "./tuits-stats";
 
 const TuitItem = ({post}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
-    }
-    const likedToggleHandler = (id) => {
-        dispatch(likedToggle(id));
     }
 
     return (
@@ -35,34 +33,7 @@ const TuitItem = ({post}) => {
                       
                     </div>
 
-                    <div className="row mt-3">
-                        <div className="wd-bookmark-post-icon-item">
-                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray">
-                                <i className="bi bi-chat"></i>
-                                <div className="wd-bookmark-post-icon-number">{post.replies}</div>
-                            </a>
-                        </div>
-
-                        <div className="wd-bookmark-post-icon-item">
-                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray">
-                                <i className="bi bi-repeat"></i>
-                                <div className="wd-bookmark-post-icon-number">{post.retuits}</div>
-                            </a>
-                        </div>
-
-                        <div className="wd-bookmark-post-icon-item">
-                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray" onClick={() => likedToggleHandler(post._id)}>
-                                {post.liked ? <i className="bi bi-heart-fill wd-color-red"></i> : <i className="bi bi-heart"></i>}
-                                <div className="wd-bookmark-post-icon-number">{post.likes}</div>
-                            </a>
-                        </div>
-
-                        <div className="wd-bookmark-post-icon-item">
-                            <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray">
-                                <i className="bi bi-upload"></i>
-                            </a>
-                        </div>
-                    </div>
+                    <TuitStats post={post}/>
                 </div>
             </div>
         </div>

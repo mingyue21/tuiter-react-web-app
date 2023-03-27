@@ -51,6 +51,11 @@ const EditProfileComponent = () => {
         });
     }
 
+    const [editDateOfBirth, setEditDateOfBirth] = useState(false);
+    const handleEditDateOfBirth = () => {
+        setEditDateOfBirth(!editDateOfBirth);
+    }
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const handleSave = () => {
@@ -81,38 +86,53 @@ const EditProfileComponent = () => {
                 </div>
             </div>
             <form className="pt-4 pb-4">
-                <div className="form-group mt-5">
-                    <label for="name" className="wd-font-color-gray">Name</label>
-                    <input type="text" className="form-control" id="firstName" name="name"
+                <div className="form-group mt-5 position-relative">
+                    <label for="name" className="wd-font-color-gray wd-label-position">Name</label>
+                    <input type="text" className="form-control pt-4" id="name" name="name"
                         value={profile.firstName + `${profile.lastName ? " " + profile.lastName : ""}`}
                         onChange={handleNameChange}/>
                 </div>
-                <div className="form-group mt-3">
-                    <label for="bio" className="wd-font-color-gray">Bio</label>
-                    <textarea className="form-control" id="bio" name="bio" 
+                <div className="form-group mt-3 position-relative">
+                    <label for="bio" className="wd-font-color-gray wd-label-position">Bio</label>
+                    <textarea className="form-control pt-4" id="bio" name="bio" 
                         value={profile.bio}
                         onChange={handleBioChange}></textarea>
                 </div>
-                <div className="form-group mt-3">
-                    <label for="location" className="wd-font-color-gray">Location</label>
-                    <input type="text" className="form-control" id="location" name="location" 
+                <div className="form-group mt-3 position-relative">
+                    <label for="location" className="wd-font-color-gray wd-label-position">Location</label>
+                    <input type="text" className="form-control pt-4" id="location" name="location" 
                         value={profile.location}
                         onChange={handleLocationChange}/>
                 </div>
-                <div className="form-group mt-3">
-                    <label for="website" className="wd-font-color-gray">Website</label>
-                    <input type="text" className="form-control" id="website" name="website" 
+                <div className="form-group mt-3 position-relative">
+                    <label for="website" className="wd-font-color-gray wd-label-position">Website</label>
+                    <input type="text" className="form-control pt-4" id="website" name="website" 
                         value={profile.website}
                         onChange={handleWebsiteChange}/>
                 </div>
-                <div className="form-group mt-3">
-                    <label for="birthdate" className="wd-font-color-gray">Birth date</label>
-                    <input type="text" className="form-control" id="birthdate" name="birthdate" 
-                        value={profile.dateOfBirth}
-                        onChange={handleBirthdateChange}/>
+                <div className="form-group mt-3 position-relative">
+                    {!editDateOfBirth ? 
+                        <div>
+                            <div className="wd-font-color-gray wd-label-position">
+                                Birth date
+                                <span> &#183;</span>
+                                <Link href="#" className="text-decoration-none" 
+                                onClick={() => handleEditDateOfBirth()}> Edit</Link>
+                            </div>
+                            <div className='mt-4 ms-3'>{profile.dateOfBirth}</div>
+                        </div>
+                        :
+                        <div>
+                        <label for="birthdate" className="wd-font-color-gray wd-label-position">
+                            Birth date
+                        </label>
+                        <input type="text" className="form-control pt-4" id="birthdate" name="birthdate"
+                            value={profile.dateOfBirth}
+                            onChange={handleBirthdateChange}/>
+                        </div>
+                    }                
                 </div>
             </form>
-            
         </div>
     )
 }

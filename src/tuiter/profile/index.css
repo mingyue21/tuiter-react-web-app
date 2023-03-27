@@ -32,3 +32,9 @@
 .wd-font-size-15 {
     font-size: 15px;
 }
+
+.wd-label-position {
+    position: relative;
+    top: 25px;
+    left: 12px;
+}
