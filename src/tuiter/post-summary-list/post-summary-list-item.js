@@ -5,7 +5,7 @@ const PostSummaryItem = ({post}) => {
         <li className="list-group-item">
             <div className="row">
                 <div className="col-10">
-                    <div><span className="fw-bolder">{post.userName}</span> &#183; {post.time}</div>
+                    <div><span className="fw-bolder">{post.username}</span> &#183; {post.time}</div>
                     <div>{post.handle}</div>
                     <div>{post.title}</div>
                 </div>

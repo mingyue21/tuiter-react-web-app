@@ -1,12 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { likedToggle } from './tuits-reducer';
+import { updateTuitThunk } from '../../services/tuits-thunks';
 
 const TuitStats = ({post}) => {
     const dispatch = useDispatch();
-    const likedToggleHandler = (id) => {
-        dispatch(likedToggle(id));
-    }
 
     return (
         <div className="row mt-3">
@@ -25,9 +22,26 @@ const TuitStats = ({post}) => {
             </div>
 
             <div className="wd-bookmark-post-icon-item">
-                <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray" onClick={() => likedToggleHandler(post._id)}>
+                <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray" 
+                    onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        likes: post.liked ? post.likes - 1 : post.likes + 1,
+                        liked: !post.liked
+                    }))}>
                     {post.liked ? <i className="bi bi-heart-fill wd-color-red"></i> : <i className="bi bi-heart"></i>}
                     <div className="wd-bookmark-post-icon-number">{post.likes}</div>
+                </a>
+            </div>
+
+            <div className="wd-bookmark-post-icon-item">
+                <a href="#" className="wd-bookmark-post-icon-pair wd-color-lightgray" 
+                    onClick={() => dispatch(updateTuitThunk({
+                        ...post,
+                        dislikes: post.disliked ? post.dislikes - 1 : post.dislikes + 1,
+                        disliked: !post.disliked
+                    }))}>
+                    {post.disliked ? <i className="bi bi-hand-thumbs-down-fill"></i> : <i className="bi bi-hand-thumbs-down"></i>}
+                    <div className="wd-bookmark-post-icon-number">{post.dislikes}</div>
                 </a>
             </div>
 
