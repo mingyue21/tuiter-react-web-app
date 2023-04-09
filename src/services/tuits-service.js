@@ -1,4 +1,5 @@
 import axios from 'axios';
+// different environment variables for a8 and a9
 const API_BASE = process.env.REACT_APP_API_BASE;
 const TUITS_API = `${API_BASE}/tuits`;
 
